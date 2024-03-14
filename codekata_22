@@ -1,0 +1,6 @@
+# 조건에 맞는 회원수 구하기
+# https://school.programmers.co.kr/learn/courses/30/lessons/131535
+
+SELECT count(user_id) as "USERS"
+from user_info
+where (age between 20 and 29) and (joined like '2021%')
