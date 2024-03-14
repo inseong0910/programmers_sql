@@ -1,0 +1,5 @@
+# DATETIME에서 DATE로 형 변환
+# https://school.programmers.co.kr/learn/courses/30/lessons/59414#fn1
+
+SELECT animal_id, name, substr(datetime, 1, 10) as "날짜"
+from animal_ins
