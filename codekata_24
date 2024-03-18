@@ -1,0 +1,7 @@
+# 카테고리 별 상품 개수 구하기
+# https://school.programmers.co.kr/learn/courses/30/lessons/131529
+
+SELECT substring(product_code, 1, 2) as CATEGORY, count(substring(product_code, 1, 2)) as PRODUCTS
+from product
+group by category
+order by product_code  
