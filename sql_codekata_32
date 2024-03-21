@@ -1,0 +1,11 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/144855 
+# 카테고리 별 도서 판매량 집계하기
+# 주요 개념 : inner join, 몇 년 몇 월 : '2022-01%'
+
+
+select a.category, sum(b.sales) as total_sales
+from book a inner join book_sales b
+on a.book_id = b.book_id
+where b.sales_date like '2022-01%'
+group by a.category
+order by a.category
