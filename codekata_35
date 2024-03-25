@@ -1,0 +1,10 @@
+# 오랜 기간 보호한 동물(2)
+# https://school.programmers.co.kr/learn/courses/30/lessons/59411
+# 주요 개념 : 조인, order by, limit 
+
+select a.animal_id, b.name 
+from animal_ins a inner join animal_outs b on a.animal_id = b.animal_id
+order by (b.DATETIME - a.DATETIME) desc limit 2
+
+# 개인 문제풀이 과정
+# https://kitsch2023.tistory.com/152
