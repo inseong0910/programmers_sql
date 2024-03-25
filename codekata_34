@@ -1,0 +1,10 @@
+# 있었는데요, 없었습니다
+# https://school.programmers.co.kr/learn/courses/30/lessons/59043
+
+select a.animal_id, b.name
+from animal_ins a inner join animal_outs b on a.animal_id = b.animal_id 
+where a.datetime > b.datetime
+order by a.datetime
+
+# 개인 풀이과정
+# https://kitsch2023.tistory.com/151 
